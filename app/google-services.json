@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307438207631",
+    "project_id": "costuras-5843d",
+    "storage_bucket": "costuras-5843d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307438207631:android:68f8ea9706bbf2b19126fa",
+        "android_client_info": {
+          "package_name": "cl.ingsoftware.costuras"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEXdecMIVaB4or1au9DJBqwhmkaaBIZhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
