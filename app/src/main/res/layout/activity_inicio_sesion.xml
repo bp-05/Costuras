@@ -8,7 +8,7 @@
     android:padding="16dp"
     android:gravity="center"
     android:background="@color/purple"
-    tools:context=".InicioSesion">
+    tools:context=".auth.InicioSesion">
 
     <LinearLayout
         android:layout_width="match_parent"

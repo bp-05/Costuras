@@ -1,4 +1,4 @@
-package cl.ingsoftware.costuras
+package cl.ingsoftware.costuras.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import cl.ingsoftware.costuras.MainActivity
+import cl.ingsoftware.costuras.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
