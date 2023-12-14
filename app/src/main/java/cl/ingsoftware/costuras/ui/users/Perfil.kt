@@ -1,4 +1,4 @@
-package cl.ingsoftware.costuras.users
+package cl.ingsoftware.costuras.ui.users
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

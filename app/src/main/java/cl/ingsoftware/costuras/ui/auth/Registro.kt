@@ -1,4 +1,4 @@
-package cl.ingsoftware.costuras.auth
+package cl.ingsoftware.costuras.ui.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
