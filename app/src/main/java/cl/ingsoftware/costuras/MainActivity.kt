@@ -20,13 +20,10 @@ class MainActivity : AppCompatActivity() {
         boton_adm.setOnClickListener {
             val intentAdm = Intent(this, Administrar::class.java)
             startActivity(intentAdm)
-
         }
 
         //TESTEO
         val image = findViewById<ImageView>(R.id.imagentest)
         Glide.with(image.context).load("https://firebasestorage.googleapis.com/v0/b/costuras-5843d.appspot.com/o/test.png?alt=media&token=6940750f-e832-4551-becc-c7d8e6c30f92").into(image)
     }
-
-
 }

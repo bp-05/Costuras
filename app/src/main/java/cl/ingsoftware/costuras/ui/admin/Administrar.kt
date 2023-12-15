@@ -1,14 +1,17 @@
 package cl.ingsoftware.costuras.ui.admin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cl.ingsoftware.costuras.R
 import cl.ingsoftware.costuras.model.AdaptadorProducto
+import cl.ingsoftware.costuras.ui.admin.agregar.AgregarProducto
 
 class Administrar : AppCompatActivity() {
 
@@ -25,5 +28,10 @@ class Administrar : AppCompatActivity() {
             recyclerProductos.adapter = AdaptadorProducto(list)
         })
 
+        val agregar = findViewById<Button>(R.id.admin_agregar)
+        agregar.setOnClickListener{
+            val intentAgregar = Intent(this, AgregarProducto::class.java)
+            startActivity(intentAgregar)
+        }
     }
 }

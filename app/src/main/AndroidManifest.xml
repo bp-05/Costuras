@@ -5,6 +5,11 @@
     <!-- INTERNET -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- CAMARA -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"
+        ></uses-feature>
 
     <application
         android:allowBackup="true"
@@ -16,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Costuras"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.admin.agregar.AgregarProducto"
+            android:exported="false" />
         <activity
             android:name=".ui.admin.Administrar"
             android:exported="false" />
