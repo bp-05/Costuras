@@ -22,7 +22,6 @@ class Registro : AppCompatActivity() {
         // Initialize Firebase Auth
         auth = Firebase.auth
         setup(auth)
-
     }
     private fun setup(auth: FirebaseAuth) {
         val boton_registro = findViewById<View>(R.id.boton_registro) as Button

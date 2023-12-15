@@ -24,7 +24,7 @@ class AdministrarViewModel : ViewModel(){
                 val updatedList = ArrayList<Producto>()
                 for (document in snapshot){
                     Log.d("testeo", "Document: "+document.data.toString())
-                    updatedList.add(Producto(document.get("imagen").toString(), document.get("nombre").toString(), document.get("precio").toString(), document.get("stock").toString()))
+                    updatedList.add(Producto(document.get("id").toString(),document.get("imagen").toString(), document.get("nombre").toString(), document.get("precio").toString(), document.get("stock").toString()))
                 }
                 value=updatedList
                 Log.d("testeo", "value: "+value.toString())
