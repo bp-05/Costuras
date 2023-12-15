@@ -1,8 +1,10 @@
 package cl.ingsoftware.costuras.ui.users
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
@@ -10,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cl.ingsoftware.costuras.R
 import cl.ingsoftware.costuras.model.AdaptadorProducto
+import cl.ingsoftware.costuras.ui.auth.InicioSesion
 
 class Perfil : AppCompatActivity() {
 
@@ -33,5 +36,13 @@ class Perfil : AppCompatActivity() {
         perfilViewModel.laston.observe(this, Observer { string ->
             lastontv.text = string
         })
+
+        val cerrarSesion: Button = findViewById(R.id.boton_cerrar_sesion)
+        cerrarSesion.setOnClickListener{
+            perfilViewModel.cerrarSesion()
+            val intentLogin = Intent(this, InicioSesion::class.java)
+            intentLogin.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intentLogin)
+        }
     }
 }
