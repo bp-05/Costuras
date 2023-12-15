@@ -28,7 +28,7 @@
         android:layout_weight="1"
         android:gravity="center">
         <Button
-            android:id="@+id/boton_main1"
+            android:id="@+id/boton_go_productos"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/celeste"
@@ -40,7 +40,7 @@
         android:layout_weight="1"
         android:gravity="center">
         <Button
-            android:id="@+id/boton_main2"
+            android:id="@+id/boton_go_perfil"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/celeste"

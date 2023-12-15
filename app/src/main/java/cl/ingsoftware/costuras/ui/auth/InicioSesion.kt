@@ -28,6 +28,7 @@ class InicioSesion : AppCompatActivity() {
         val email = findViewById<View>(R.id.email_inicio_sesion) as EditText
         val clave = findViewById<View>(R.id.clave_inicio_sesion) as EditText
         val boton_registro = findViewById<View>(R.id.txt_signup) as TextView
+        val error = findViewById<View>(R.id.errorlog) as TextView
 
         boton_inicio_sesion.setOnClickListener {
             if (email.text.isNotEmpty() && clave.text.isNotEmpty()){
@@ -40,6 +41,8 @@ class InicioSesion : AppCompatActivity() {
                         showAlert()
                     }
                 }
+            }else{
+                error.text="Debes llenar todos los campos"
             }
         }
 

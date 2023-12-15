@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2">
                 <ImageView
-                    android:id="@+id/image_admin_producto"
+                    android:id="@+id/image_user_producto"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp">
@@ -53,7 +53,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
                         <TextView
-                            android:id="@+id/admin_nombre"
+                            android:id="@+id/user_nombre"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="null"
@@ -81,7 +81,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
                         <TextView
-                            android:id="@+id/admin_precio"
+                            android:id="@+id/user_precio"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="null"
@@ -109,7 +109,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
                         <TextView
-                            android:id="@+id/admin_stock"
+                            android:id="@+id/user_stock"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="null"
@@ -123,15 +123,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:gravity="center">
-                <Button
-                    android:id="@+id/admin_eliminar"
-                    android:layout_width="66dp"
-                    android:layout_height="50dp"
-                    android:backgroundTint="@color/celeste"
-                    android:text="X"
-                    android:gravity="center"
-                    android:textSize="25dp"
-                    android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
